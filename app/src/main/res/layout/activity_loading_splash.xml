@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guest_bg_loading"
+    tools:context=".LoadingSplash">
+
+    <!-- Top Guideline at 21% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <!-- Middle Section Top Guideline at 14% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_middle_top_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <!-- Bottom Guideline at 6% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" /> <!-- 1 - 0.06 -->
+
+    <!-- "Welcome" TextView -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:font="@font/roboto_light"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top_21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- "FUNSERVICE" TextView -->
+
+    <!-- "Beta" TextView -->
+    <TextView
+        android:id="@+id/funservice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="FUNSERVICE"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/roboto_light"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+
+    <TextView
+        android:id="@+id/beta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beta"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HotelAPP</string>
+    <string name="welcome">Welcome</string>
+    <string name="authcode_error">AuthCode error!!</string>
+    <string name="point_camera_at_a_qr_code">Point Camera at a QR Code</string>
+    <string name="scan">Scan</string>
+    <string name="authcode">AuthCode</string>
+    <string name="facebook_app_id">1027491372201720</string>
+    <string name="fb_login_protocol_scheme">fb1027491372201720</string>
+    <string name="facebook_client_token">5054ab844c01138ec18374293c84522a</string>
+    <string name="forget_password"><u>Forget password?</u></string>
+    <string name="please_key_in_your_email">Please key in your Email</string>
+    <string name="a_new_password_will_be_sent_to_your_mailbox">A new password will be sent to your mailbox</string>
+</resources>

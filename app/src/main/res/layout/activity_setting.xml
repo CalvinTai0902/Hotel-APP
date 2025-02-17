@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BF000000"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Setting"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/guest_ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/header_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingStart="28dp"
+            android:text="Notice"
+            android:textColor="#666666"
+            android:fontFamily="@font/roboto_regular"
+            android:background="#D2D2D2"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingStart="28dp"
+                android:text="Ring"
+                android:textColor="#333333"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/btn_ring_next"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/guest_btn_list_next"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingStart="28dp"
+                android:text="Vibrate"
+                android:textColor="#333333"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/btn_Vibrate_next"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/guest_btn_list_next"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingStart="28dp"
+            android:text="Information"
+            android:textColor="#666666"
+            android:fontFamily="@font/roboto_regular"
+            android:background="#D2D2D2"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingStart="28dp"
+                android:text="About FUNTORO"
+                android:textColor="#333333"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/btn_Info_next1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/guest_btn_list_next"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingStart="28dp"
+                android:text="Frequently Questions"
+                android:textColor="#333333"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/btn_Info_next2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/guest_btn_list_next"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingStart="28dp"
+            android:textColor="#666666"
+            android:background="#D2D2D2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingStart="28dp"
+                android:text="Log out"
+                android:textColor="#333333"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/btn_logout_next1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/guest_btn_list_next"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
